@@ -16,7 +16,10 @@
        This document describes a YANG data model for Ethernet networks when used either as a client-layer network of an underlay transport network (e.g., an Optical Transport Network (OTN)) or as a transport network itself. 
     " name="description">
 <meta content="xml2rfc 3.24.0" name="generator">
-<meta content="draft-ietf-ccamp-eth-client-te-topo-yang-05" name="ietf.draft">
+<meta content="next generation" name="keyword">
+<meta content="unicorn" name="keyword">
+<meta content="sparkling distributed ledger" name="keyword">
+<meta content="draft-ietf-ccamp-eth-client-te-topo-yang-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.24.0
     Python 3.12.7
@@ -1045,11 +1048,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">ETH Topology Transport YANG Model</td>
-<td class="right">October 2023</td>
+<td class="right">November 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Yu, et al.</td>
-<td class="center">Expires 11 April 2024</td>
+<td class="center">Expires 24 May 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1057,17 +1060,17 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <div id="internal-metadata" class="document-information">
 <dl id="identifiers">
 <dt class="label-workgroup">Workgroup:</dt>
-<dd class="workgroup">CCAMP Working Group</dd>
+<dd class="workgroup">Common Control and Measurement Plane</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-ietf-ccamp-eth-client-te-topo-yang-05</dd>
+<dd class="internet-draft">draft-ietf-ccamp-eth-client-te-topo-yang-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-10-09" class="published">9 October 2023</time>
+<time datetime="2024-11-20" class="published">20 November 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-04-11">11 April 2024</time></dd>
+<dd class="expires"><time datetime="2025-05-24">24 May 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1106,6 +1109,22 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
 <p id="section-abstract-1">This document describes a YANG data model for Ethernet networks when used either as a client-layer network of an underlay transport network (e.g., an Optical Transport Network (OTN)) or as a transport network itself.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
+<section class="note rfcEditorRemove" id="section-note.1">
+      <h2 id="name-about-this-document">
+<a href="#name-about-this-document" class="section-name selfRef">About This Document</a>
+      </h2>
+<p id="section-note.1-1">This note is to be removed before publishing as an RFC.<a href="#section-note.1-1" class="pilcrow">¶</a></p>
+<p id="section-note.1-2">
+        The latest revision of this draft can be found at <span><a href="https://ietf-ccamp-wg.github.io/draft-ietf-ccamp-eth-client-te-topo-yang/draft-ietf-ccamp-eth-client-te-topo-yang.html">https://ietf-ccamp-wg.github.io/draft-ietf-ccamp-eth-client-te-topo-yang/draft-ietf-ccamp-eth-client-te-topo-yang.html</a></span>.
+        Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-ietf-ccamp-eth-client-te-topo-yang/">https://datatracker.ietf.org/doc/draft-ietf-ccamp-eth-client-te-topo-yang/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
+<p id="section-note.1-3">
+        Discussion of this document takes place on the
+        Common Control and Measurement Plane Working Group mailing list (<span><a href="mailto:ccamp@ietf.org">mailto:ccamp@ietf.org</a></span>),
+        which is archived at <span><a href="https://mailarchive.ietf.org/arch/browse/ccamp/">https://mailarchive.ietf.org/arch/browse/ccamp/</a></span>.
+        Subscribe at <span><a href="https://www.ietf.org/mailman/listinfo/ccamp/">https://www.ietf.org/mailman/listinfo/ccamp/</a></span>.<a href="#section-note.1-3" class="pilcrow">¶</a></p>
+<p id="section-note.1-4">Source for this draft and an issue tracker can be found at
+        <span><a href="https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang">https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang</a></span>.<a href="#section-note.1-4" class="pilcrow">¶</a></p>
+</section>
 <div id="status-of-memo">
 <section id="section-boilerplate.1">
         <h2 id="name-status-of-this-memo">
@@ -1125,7 +1144,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 11 April 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 24 May 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1134,7 +1153,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#name-copyright-notice" class="section-name selfRef">Copyright Notice</a>
         </h2>
 <p id="section-boilerplate.2-1">
-            Copyright (c) 2023 IETF Trust and the persons identified as the
+            Copyright (c) 2024 IETF Trust and the persons identified as the
             document authors. All rights reserved.<a href="#section-boilerplate.2-1" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.2-2">
             This document is subject to BCP 78 and the IETF Trust's Legal
@@ -1189,13 +1208,13 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-ethernet-topology-yang-code" class="internal xref">Ethernet Topology YANG Code</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-manageability-consideration" class="internal xref">Manageability Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-manageability-consideration" class="internal xref">Manageability Considerations</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
+            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
             <p id="section-toc.1-1.8.1"><a href="#section-8" class="auto internal xref">8</a>.  <a href="#name-references" class="internal xref">References</a></p>
@@ -4488,68 +4507,70 @@ module ietf-eth-te-topology {
 </div>
 </section>
 </div>
-<div id="iana-considerations">
+<div id="manageability-considerations">
 <section id="section-5">
-      <h2 id="name-iana-considerations">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+      <h2 id="name-manageability-consideration">
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-manageability-consideration" class="section-name selfRef">Manageability Considerations</a>
       </h2>
-<p id="section-5-1">It is proposed that IANA should assign new URIs from the "IETF XML
-   Registry" <span>[<a href="#RFC3688" class="cite xref">RFC3688</a>]</span> as follows:<a href="#section-5-1" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-5-2">
+<p id="section-5-1">TBD.<a href="#section-5-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="security-considerations">
+<section id="section-6">
+      <h2 id="name-security-considerations">
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      </h2>
+<p id="section-6-1">The data following the model defined in this document is exchanged
+   via, for example, the interface between an orchestrator and a
+   transport network controller.  The security concerns mentioned in
+   <span>[<a href="#RFC8795" class="cite xref">RFC8795</a>]</span> for using ietf-te-topology.yang model also applies to this
+   document.<a href="#section-6-1" class="pilcrow">¶</a></p>
+<p id="section-6-2">The YANG module defined in this document can be accessed via the
+   RESTCONF protocol defined in <span>[<a href="#RFC8040" class="cite xref">RFC8040</a>]</span>, or maybe via the NETCONF
+   protocol <span>[<a href="#RFC6241" class="cite xref">RFC6241</a>]</span>.<a href="#section-6-2" class="pilcrow">¶</a></p>
+<p id="section-6-3">There are a number of data nodes defined in the YANG module which are
+   writable/creatable/deletable (i.e., config true, which is the
+   default).  These data nodes may be considered sensitive or vulnerable
+   in some network environments.  Write operations (e.g., POST) to these
+   data nodes without proper protection can have a negative effect on
+   network operations.<a href="#section-6-3" class="pilcrow">¶</a></p>
+<p id="section-6-4">Editors note: to list specific subtrees and data nodes and their
+   sensitivity/vulnerability.<a href="#section-6-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="iana-considerations">
+<section id="section-7">
+      <h2 id="name-iana-considerations">
+<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+      </h2>
+<p id="section-7-1">It is proposed that IANA should assign new URIs from the "IETF XML
+   Registry" <span>[<a href="#RFC3688" class="cite xref">RFC3688</a>]</span> as follows:<a href="#section-7-1" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-7-2">
 <pre>
       URI: urn:ietf:params:xml:ns:yang:ietf-eth-te-topology
       Registrant Contact:  The IESG.
       XML: N/A, the requested URI is an XML namespace.
-</pre><a href="#section-5-2" class="pilcrow">¶</a>
+</pre><a href="#section-7-2" class="pilcrow">¶</a>
 </div>
-<p id="section-5-3">This document registers following YANG modules in the YANG Module
-   Names registry <span>[<a href="#RFC7950" class="cite xref">RFC7950</a>]</span>.<a href="#section-5-3" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-5-4">
+<p id="section-7-3">This document registers following YANG modules in the YANG Module
+   Names registry <span>[<a href="#RFC7950" class="cite xref">RFC7950</a>]</span>.<a href="#section-7-3" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-7-4">
 <pre>
       name:      ietf-eth-te-topology
       namespace: urn:ietf:params:xml:ns:yang:ietf-eth-te-topology
       prefix:    etht
       reference: RFC XXXX
-</pre><a href="#section-5-4" class="pilcrow">¶</a>
+</pre><a href="#section-7-4" class="pilcrow">¶</a>
 </div>
-<p id="section-5-5">RFC Editor: Please replace XXXX with the RFC number assigned to this document.<a href="#section-5-5" class="pilcrow">¶</a></p>
+<p id="section-7-5">RFC Editor: Please replace XXXX with the RFC number assigned to this document.<a href="#section-7-5" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="manageability-considerations">
-<section id="section-6">
-      <h2 id="name-manageability-consideration">
-<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-manageability-consideration" class="section-name selfRef">Manageability Considerations</a>
-      </h2>
-<p id="section-6-1">TBD.<a href="#section-6-1" class="pilcrow">¶</a></p>
-</section>
-</div>
-<div id="security-considerations">
-<section id="section-7">
-      <h2 id="name-security-considerations">
-<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
-      </h2>
-<p id="section-7-1">The data following the model defined in this document is exchanged
-   via, for example, the interface between an orchestrator and a
-   transport network controller.  The security concerns mentioned in
-   <span>[<a href="#RFC8795" class="cite xref">RFC8795</a>]</span> for using ietf-te-topology.yang model also applies to this
-   document.<a href="#section-7-1" class="pilcrow">¶</a></p>
-<p id="section-7-2">The YANG module defined in this document can be accessed via the
-   RESTCONF protocol defined in <span>[<a href="#RFC8040" class="cite xref">RFC8040</a>]</span>, or maybe via the NETCONF
-   protocol <span>[<a href="#RFC6241" class="cite xref">RFC6241</a>]</span>.<a href="#section-7-2" class="pilcrow">¶</a></p>
-<p id="section-7-3">There are a number of data nodes defined in the YANG module which are
-   writable/creatable/deletable (i.e., config true, which is the
-   default).  These data nodes may be considered sensitive or vulnerable
-   in some network environments.  Write operations (e.g., POST) to these
-   data nodes without proper protection can have a negative effect on
-   network operations.<a href="#section-7-3" class="pilcrow">¶</a></p>
-<p id="section-7-4">Editors note: to list specific subtrees and data nodes and their
-   sensitivity/vulnerability.<a href="#section-7-4" class="pilcrow">¶</a></p>
-</section>
-</div>
+<div id="sec-combined-references">
 <section id="section-8">
       <h2 id="name-references">
 <a href="#section-8" class="section-number selfRef">8. </a><a href="#name-references" class="section-name selfRef">References</a>
       </h2>
+<div id="sec-normative-references">
 <section id="section-8.1">
         <h3 id="name-normative-references">
 <a href="#section-8.1" class="section-number selfRef">8.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
@@ -4557,7 +4578,7 @@ module ietf-eth-te-topology {
 <dl class="references">
 <dt id="I-D.ietf-ccamp-client-signal-yang">[I-D.ietf-ccamp-client-signal-yang]</dt>
         <dd>
-<span class="refAuthor">Zheng, H.</span>, <span class="refAuthor">Guo, A.</span>, <span class="refAuthor">Busi, I.</span>, <span class="refAuthor">Snitser, A.</span>, and <span class="refAuthor">F. Lazzeri</span>, <span class="refTitle">"A YANG Data Model for Transport Network Client Signals"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-ccamp-client-signal-yang-09</span>, <time datetime="2023-07-09" class="refDate">9 July 2023</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-09">https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-09</a>&gt;</span>. </dd>
+<span class="refAuthor">Zheng, H.</span>, <span class="refAuthor">Guo, A.</span>, <span class="refAuthor">Busi, I.</span>, <span class="refAuthor">Snitser, A.</span>, and <span class="refAuthor">C. Yu</span>, <span class="refTitle">"A YANG Data Model for Transport Network Client Signals"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-ccamp-client-signal-yang-13</span>, <time datetime="2024-08-01" class="refDate">1 August 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-13">https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-13</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="ITU_G.8021">[ITU_G.8021]</dt>
         <dd>
@@ -4565,38 +4586,40 @@ module ietf-eth-te-topology {
 <dd class="break"></dd>
 <dt id="RFC3688">[RFC3688]</dt>
         <dd>
-<span class="refAuthor">Mealling, M.</span>, <span class="refTitle">"The IETF XML Registry"</span>, <span class="seriesInfo">BCP 81</span>, <span class="seriesInfo">RFC 3688</span>, <span class="seriesInfo">DOI 10.17487/RFC3688</span>, <time datetime="2004-01" class="refDate">January 2004</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc3688">https://www.rfc-editor.org/info/rfc3688</a>&gt;</span>. </dd>
+<span class="refAuthor">Mealling, M.</span>, <span class="refTitle">"The IETF XML Registry"</span>, <span class="seriesInfo">BCP 81</span>, <span class="seriesInfo">RFC 3688</span>, <span class="seriesInfo">DOI 10.17487/RFC3688</span>, <time datetime="2004-01" class="refDate">January 2004</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc3688">https://www.rfc-editor.org/rfc/rfc3688</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC6241">[RFC6241]</dt>
         <dd>
-<span class="refAuthor">Enns, R., Ed.</span>, <span class="refAuthor">Bjorklund, M., Ed.</span>, <span class="refAuthor">Schoenwaelder, J., Ed.</span>, and <span class="refAuthor">A. Bierman, Ed.</span>, <span class="refTitle">"Network Configuration Protocol (NETCONF)"</span>, <span class="seriesInfo">RFC 6241</span>, <span class="seriesInfo">DOI 10.17487/RFC6241</span>, <time datetime="2011-06" class="refDate">June 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6241">https://www.rfc-editor.org/info/rfc6241</a>&gt;</span>. </dd>
+<span class="refAuthor">Enns, R., Ed.</span>, <span class="refAuthor">Bjorklund, M., Ed.</span>, <span class="refAuthor">Schoenwaelder, J., Ed.</span>, and <span class="refAuthor">A. Bierman, Ed.</span>, <span class="refTitle">"Network Configuration Protocol (NETCONF)"</span>, <span class="seriesInfo">RFC 6241</span>, <span class="seriesInfo">DOI 10.17487/RFC6241</span>, <time datetime="2011-06" class="refDate">June 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc6241">https://www.rfc-editor.org/rfc/rfc6241</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC6991">[RFC6991]</dt>
         <dd>
-<span class="refAuthor">Schoenwaelder, J., Ed.</span>, <span class="refTitle">"Common YANG Data Types"</span>, <span class="seriesInfo">RFC 6991</span>, <span class="seriesInfo">DOI 10.17487/RFC6991</span>, <time datetime="2013-07" class="refDate">July 2013</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6991">https://www.rfc-editor.org/info/rfc6991</a>&gt;</span>. </dd>
+<span class="refAuthor">Schoenwaelder, J., Ed.</span>, <span class="refTitle">"Common YANG Data Types"</span>, <span class="seriesInfo">RFC 6991</span>, <span class="seriesInfo">DOI 10.17487/RFC6991</span>, <time datetime="2013-07" class="refDate">July 2013</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc6991">https://www.rfc-editor.org/rfc/rfc6991</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC7950">[RFC7950]</dt>
         <dd>
-<span class="refAuthor">Bjorklund, M., Ed.</span>, <span class="refTitle">"The YANG 1.1 Data Modeling Language"</span>, <span class="seriesInfo">RFC 7950</span>, <span class="seriesInfo">DOI 10.17487/RFC7950</span>, <time datetime="2016-08" class="refDate">August 2016</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc7950">https://www.rfc-editor.org/info/rfc7950</a>&gt;</span>. </dd>
+<span class="refAuthor">Bjorklund, M., Ed.</span>, <span class="refTitle">"The YANG 1.1 Data Modeling Language"</span>, <span class="seriesInfo">RFC 7950</span>, <span class="seriesInfo">DOI 10.17487/RFC7950</span>, <time datetime="2016-08" class="refDate">August 2016</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc7950">https://www.rfc-editor.org/rfc/rfc7950</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8040">[RFC8040]</dt>
         <dd>
-<span class="refAuthor">Bierman, A.</span>, <span class="refAuthor">Bjorklund, M.</span>, and <span class="refAuthor">K. Watsen</span>, <span class="refTitle">"RESTCONF Protocol"</span>, <span class="seriesInfo">RFC 8040</span>, <span class="seriesInfo">DOI 10.17487/RFC8040</span>, <time datetime="2017-01" class="refDate">January 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8040">https://www.rfc-editor.org/info/rfc8040</a>&gt;</span>. </dd>
+<span class="refAuthor">Bierman, A.</span>, <span class="refAuthor">Bjorklund, M.</span>, and <span class="refAuthor">K. Watsen</span>, <span class="refTitle">"RESTCONF Protocol"</span>, <span class="seriesInfo">RFC 8040</span>, <span class="seriesInfo">DOI 10.17487/RFC8040</span>, <time datetime="2017-01" class="refDate">January 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8040">https://www.rfc-editor.org/rfc/rfc8040</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8342">[RFC8342]</dt>
         <dd>
-<span class="refAuthor">Bjorklund, M.</span>, <span class="refAuthor">Schoenwaelder, J.</span>, <span class="refAuthor">Shafer, P.</span>, <span class="refAuthor">Watsen, K.</span>, and <span class="refAuthor">R. Wilton</span>, <span class="refTitle">"Network Management Datastore Architecture (NMDA)"</span>, <span class="seriesInfo">RFC 8342</span>, <span class="seriesInfo">DOI 10.17487/RFC8342</span>, <time datetime="2018-03" class="refDate">March 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8342">https://www.rfc-editor.org/info/rfc8342</a>&gt;</span>. </dd>
+<span class="refAuthor">Bjorklund, M.</span>, <span class="refAuthor">Schoenwaelder, J.</span>, <span class="refAuthor">Shafer, P.</span>, <span class="refAuthor">Watsen, K.</span>, and <span class="refAuthor">R. Wilton</span>, <span class="refTitle">"Network Management Datastore Architecture (NMDA)"</span>, <span class="seriesInfo">RFC 8342</span>, <span class="seriesInfo">DOI 10.17487/RFC8342</span>, <time datetime="2018-03" class="refDate">March 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8342">https://www.rfc-editor.org/rfc/rfc8342</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8345">[RFC8345]</dt>
         <dd>
-<span class="refAuthor">Clemm, A.</span>, <span class="refAuthor">Medved, J.</span>, <span class="refAuthor">Varga, R.</span>, <span class="refAuthor">Bahadur, N.</span>, <span class="refAuthor">Ananthakrishnan, H.</span>, and <span class="refAuthor">X. Liu</span>, <span class="refTitle">"A YANG Data Model for Network Topologies"</span>, <span class="seriesInfo">RFC 8345</span>, <span class="seriesInfo">DOI 10.17487/RFC8345</span>, <time datetime="2018-03" class="refDate">March 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8345">https://www.rfc-editor.org/info/rfc8345</a>&gt;</span>. </dd>
+<span class="refAuthor">Clemm, A.</span>, <span class="refAuthor">Medved, J.</span>, <span class="refAuthor">Varga, R.</span>, <span class="refAuthor">Bahadur, N.</span>, <span class="refAuthor">Ananthakrishnan, H.</span>, and <span class="refAuthor">X. Liu</span>, <span class="refTitle">"A YANG Data Model for Network Topologies"</span>, <span class="seriesInfo">RFC 8345</span>, <span class="seriesInfo">DOI 10.17487/RFC8345</span>, <time datetime="2018-03" class="refDate">March 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8345">https://www.rfc-editor.org/rfc/rfc8345</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8795">[RFC8795]</dt>
       <dd>
-<span class="refAuthor">Liu, X.</span>, <span class="refAuthor">Bryskin, I.</span>, <span class="refAuthor">Beeram, V.</span>, <span class="refAuthor">Saad, T.</span>, <span class="refAuthor">Shah, H.</span>, and <span class="refAuthor">O. Gonzalez de Dios</span>, <span class="refTitle">"YANG Data Model for Traffic Engineering (TE) Topologies"</span>, <span class="seriesInfo">RFC 8795</span>, <span class="seriesInfo">DOI 10.17487/RFC8795</span>, <time datetime="2020-08" class="refDate">August 2020</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8795">https://www.rfc-editor.org/info/rfc8795</a>&gt;</span>. </dd>
+<span class="refAuthor">Liu, X.</span>, <span class="refAuthor">Bryskin, I.</span>, <span class="refAuthor">Beeram, V.</span>, <span class="refAuthor">Saad, T.</span>, <span class="refAuthor">Shah, H.</span>, and <span class="refAuthor">O. Gonzalez de Dios</span>, <span class="refTitle">"YANG Data Model for Traffic Engineering (TE) Topologies"</span>, <span class="seriesInfo">RFC 8795</span>, <span class="seriesInfo">DOI 10.17487/RFC8795</span>, <time datetime="2020-08" class="refDate">August 2020</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8795">https://www.rfc-editor.org/rfc/rfc8795</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
+</div>
+<div id="sec-informative-references">
 <section id="section-8.2">
         <h3 id="name-informative-references">
 <a href="#section-8.2" class="section-number selfRef">8.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
@@ -4604,11 +4627,13 @@ module ietf-eth-te-topology {
 <dl class="references">
 <dt id="RFC8340">[RFC8340]</dt>
       <dd>
-<span class="refAuthor">Bjorklund, M.</span> and <span class="refAuthor">L. Berger, Ed.</span>, <span class="refTitle">"YANG Tree Diagrams"</span>, <span class="seriesInfo">BCP 215</span>, <span class="seriesInfo">RFC 8340</span>, <span class="seriesInfo">DOI 10.17487/RFC8340</span>, <time datetime="2018-03" class="refDate">March 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8340">https://www.rfc-editor.org/info/rfc8340</a>&gt;</span>. </dd>
+<span class="refAuthor">Bjorklund, M.</span> and <span class="refAuthor">L. Berger, Ed.</span>, <span class="refTitle">"YANG Tree Diagrams"</span>, <span class="seriesInfo">BCP 215</span>, <span class="seriesInfo">RFC 8340</span>, <span class="seriesInfo">DOI 10.17487/RFC8340</span>, <time datetime="2018-03" class="refDate">March 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8340">https://www.rfc-editor.org/rfc/rfc8340</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
+</div>
 </section>
+</div>
 <div id="acknowledgments">
 <section id="appendix-A">
       <h2 id="name-acknowledgments">
