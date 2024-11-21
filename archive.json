@@ -1,0 +1,624 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-11-21T00:59:25.435497+00:00",
+  "repo": "ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    },
+    {
+      "name": "wait",
+      "description": "",
+      "color": "FBCA04"
+    },
+    {
+      "name": "agreed",
+      "description": "",
+      "color": "0E8A16"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "MDU6SXNzdWU4OTU3MzMzMDc=",
+      "title": "Addressing Sergio's comment",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/1",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "agva123",
+        "italobusi",
+        "haomianzheng"
+      ],
+      "labels": [
+        "documentation"
+      ],
+      "body": "Addressing Sergio's comment raised during WG adoption poll:\r\n\r\nhttps://mailarchive.ietf.org/arch/msg/ccamp/_coq7CbVgOqfV3f7500_hH0g-Dk/\r\n",
+      "createdAt": "2021-05-19T18:04:53Z",
+      "updatedAt": "2023-09-28T15:18:27Z",
+      "closedAt": "2023-09-28T15:18:27Z",
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "I think we need to review the text and align the description with the scope of the draft (Ethernet TE and client topology)\r\n",
+          "createdAt": "2021-05-19T18:05:29Z",
+          "updatedAt": "2021-05-19T18:05:29Z"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "MDU6SXNzdWU4OTU3MzgyNDk=",
+      "title": "Addressing Tom Petch's comments",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/2",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "agva123",
+        "italobusi",
+        "haomianzheng"
+      ],
+      "labels": [
+        "documentation"
+      ],
+      "body": "> The YANG module is totally devoid of references, which has to be fixed, at least in part, at some stage and the earlier it is fixed, the less time consuming reviewing is.\r\n> \r\n\r\n- [x] add references when applicable\r\n\r\nReferences added when applicable: see PR #6 \r\n\r\n> s.5 says there is no open issue in this version.  The text gives the lie to this with 'open issue' in four places\r\n> \r\n\r\n- [x] remove section 5: all the issues described in section 5 have been addressed either in this revision or in previous revisions\r\n\r\nSection 5 removed because all the issues described in section 5 have been addressed either in this revision or in previous revisions: see PR #10 \r\n\r\n> there are YANG statements commented out.  The last time I saw this it was because the Author could not make the YANG work\r\n> \r\n\r\n- [x] review the YANG code and track these as open issues in github\r\n\r\nRemoved all the YANG statements comments out: see PR #6 \r\n\r\n> It is another of those module that is really 100 or so independent YANG fragments in a different order to those other modules that are really 100 or so independent YANG fragments.  As was said in a recent IESG review, it is a shame we cannot go back and change the TEAS i.e. they got the underlying structure wrong:-( \r\n> \r\n\r\n- [x] clarify in the draft that the multiple augment statements to augment the TE label/bandwidth information are based on the guidelines provided by section 6 of RFC8795 (see for example the text in otn-topology draft).\r\n\r\n\r\nDraft updated to clarify that the multiple augment statements to augment the TE label/bandwidth information are based on the guidelines provided by section 6 of RFC8795: see PR #10 \r\n\r\n> the choice of YANG prefix makes comprehension harder\r\n> \r\n\r\n- [x] align the prefix with the outcome of the prefix discussion on the mailing list\r\n\r\nSee #3 \r\n\r\nSee: https://mailarchive.ietf.org/arch/msg/ccamp/o6HYzsxzNKjWRJFa5CO9bYNqHs4/\r\n",
+      "createdAt": "2021-05-19T18:10:52Z",
+      "updatedAt": "2023-09-28T15:18:28Z",
+      "closedAt": "2023-09-28T15:18:28Z",
+      "comments": []
+    },
+    {
+      "number": 3,
+      "id": "I_kwDOFWCA6s4_Y4Zu",
+      "title": "YANG model prefix",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/3",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [
+        "bug",
+        "agreed"
+      ],
+      "body": "See tsaad-dev/te#125\r\n",
+      "createdAt": "2021-11-25T11:43:25Z",
+      "updatedAt": "2023-09-28T14:58:11Z",
+      "closedAt": "2023-09-28T14:58:11Z",
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOFWCA6s4_ZkDB",
+      "title": "Definition of ETH bandwidth",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/4",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [
+        "enhancement"
+      ],
+      "body": "- [ ] https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-client-signal-yang/issues/7",
+      "createdAt": "2021-11-25T14:36:32Z",
+      "updatedAt": "2023-09-10T09:24:57Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 5,
+      "id": "I_kwDOFWCA6s5djzDB",
+      "title": "Support for a single topology instance across multi-layer networks",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/5",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "italobusi",
+        "aguoietf"
+      ],
+      "labels": [
+        "bug",
+        "agreed"
+      ],
+      "body": "See: https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/57\r\n",
+      "createdAt": "2023-02-03T11:06:07Z",
+      "updatedAt": "2023-09-28T14:58:11Z",
+      "closedAt": "2023-09-28T14:58:11Z",
+      "comments": []
+    },
+    {
+      "number": 7,
+      "id": "I_kwDOFWCA6s5wk7bs",
+      "title": "Check must statement",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/7",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [
+        "bug"
+      ],
+      "body": "Need to check (testing some JSON examples) the correctness of this must statement\r\n\r\n_Originally posted by @italobusi in https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/pull/6#discussion_r1320557472_\r\n            ",
+      "createdAt": "2023-09-09T12:43:49Z",
+      "updatedAt": "2023-09-28T14:57:14Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "[e-error.out.txt](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/files/12588660/e-error.out.txt)\r\n[e.json.txt](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/files/12588661/e.json.txt)\r\n[e-error.json.txt](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/files/12588662/e-error.json.txt)\r\n\r\ne.json.txt contains a small instance example that passes validation with yanglint\r\ne-error.json.txt contains a small example that doesn't pass yanglint\r\ne-error.out-txt contains the error message from yanglint showing the must statement fails.\r\n\r\n_Originally posted by @samans in https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/6#issuecomment-1716034766_\r\n            ",
+          "createdAt": "2023-09-28T14:57:13Z",
+          "updatedAt": "2023-09-28T14:57:13Z"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "id": "I_kwDOFWCA6s5wk81j",
+      "title": "Complete Terminology and Notation",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/8",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [
+        "documentation"
+      ],
+      "body": "Complete the terminology and notation section with the Ethernet specific terminology being used in the document",
+      "createdAt": "2023-09-09T13:04:12Z",
+      "updatedAt": "2023-09-10T09:24:28Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 9,
+      "id": "I_kwDOFWCA6s5wmOGJ",
+      "title": "Complete overview of Ethernet attributes",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/9",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [
+        "documentation"
+      ],
+      "body": "See for example section 2.2 of draft-ietf-ccamp-otn-topo-yang-17\r\n",
+      "createdAt": "2023-09-10T09:20:04Z",
+      "updatedAt": "2023-09-10T09:24:20Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 11,
+      "id": "I_kwDOFWCA6s5wyMo6",
+      "title": "Alignment with Packet TE Topology",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/11",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "italobusi",
+        "aguoietf"
+      ],
+      "labels": [
+        "enhancement"
+      ],
+      "body": "Align the I-D and YANG model to augment the Packet TE Topology model instead:\r\n\r\n```\r\n                      +-------------------------+\r\n         TE generic   |    ietf-te-topology     |\r\n                      +------------+------------+\r\n                                   ^\r\n                                   |\r\n                                   | Augments\r\n                                   |\r\n                      +------------+------------+\r\n         Packet TE    | ietf-te-topology-packet |\r\n                      +------------+------------+\r\n                                   ^\r\n                                   |\r\n                                   | Augments\r\n                                   |\r\n                      +------------+------------+\r\n         Ethernet     |  ietf-eth-te-topology   |\r\n                      +-------------------------+\r\n\r\n```\r\n\r\nSee also [draft-busizheng-teas-yang-te-mpls-topology](https://datatracker.ietf.org/doc/html/draft-busizheng-teas-yang-te-mpls-topology)",
+      "createdAt": "2023-09-12T10:27:40Z",
+      "updatedAt": "2023-10-04T19:49:18Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
+  "pulls": [
+    {
+      "number": 6,
+      "id": "PR_kwDOFWCA6s5Z7a1G",
+      "title": "YANG updates for the -05 version",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/pull/6",
+      "state": "MERGED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Updated to support multi-layer topology instances: fix #5 \r\n\r\nFixed YANG model prefix: fix #3 \r\n\r\nAdded references when applicable: see #2 \r\n\r\nRemoved all the YANG statements comments out: see #2 \r\n\r\nAligned with TE bandwidth, label range and label augmentations in other topology models\r\n\r\nFixed other YANG language nits.",
+      "createdAt": "2023-09-09T08:16:37Z",
+      "updatedAt": "2023-09-28T14:58:10Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang",
+      "baseRefName": "main",
+      "baseRefOid": "72c4f8dcb735a3f7c08b257bfcb4bf6876c0bb16",
+      "headRepository": "italobusi/draft-ietf-ccamp-eth-client-te-topo-yang",
+      "headRefName": "ml-topo",
+      "headRefOid": "2c8cb26b2e74d0958587d6db2c832526973c2b46",
+      "closedAt": "2023-09-28T14:58:10Z",
+      "mergedAt": "2023-09-28T14:58:10Z",
+      "mergedBy": "italobusi",
+      "mergeCommit": {
+        "oid": "9966954f804aebcd6ded4e129a6043dd9ee95339"
+      },
+      "comments": [
+        {
+          "author": "samans",
+          "authorAssociation": "NONE",
+          "body": "[e-error.out.txt](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/files/12588660/e-error.out.txt)\r\n[e.json.txt](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/files/12588661/e.json.txt)\r\n[e-error.json.txt](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/files/12588662/e-error.json.txt)\r\n\r\ne.json.txt contains a small instance example that passes validation with yanglint\r\ne-error.json.txt contains a small example that doesn't pass yanglint\r\ne-error.out-txt contains the error message from yanglint showing the must statement fails.",
+          "createdAt": "2023-09-12T16:18:24Z",
+          "updatedAt": "2023-09-12T16:18:24Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOFWCA6s5gelur",
+          "commit": {
+            "abbreviatedOid": "7c31a6a"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-09T12:43:21Z",
+          "updatedAt": "2023-09-09T12:43:21Z",
+          "comments": [
+            {
+              "originalPosition": 247,
+              "body": "Need to check (testing some JSON examples) the correctness of this must statement",
+              "createdAt": "2023-09-09T12:43:21Z",
+              "updatedAt": "2023-09-09T12:43:21Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5gelv3",
+          "commit": {
+            "abbreviatedOid": "7c31a6a"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-09T12:44:18Z",
+          "updatedAt": "2023-09-09T12:44:18Z",
+          "comments": [
+            {
+              "originalPosition": 247,
+              "body": "See issue #7 ",
+              "createdAt": "2023-09-09T12:44:18Z",
+              "updatedAt": "2023-09-09T12:44:27Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5gtwxT",
+          "commit": {
+            "abbreviatedOid": "7c31a6a"
+          },
+          "author": "aguoietf",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-12T16:01:29Z",
+          "updatedAt": "2023-09-12T16:01:29Z",
+          "comments": [
+            {
+              "originalPosition": 7,
+              "body": "would it be \"etht\" if to align with the conventions for TE-based models?\r\nOr are you concerned about possible confusion that \"etht\" means \"ethernet topology\"?\r\n\r\nFor the reference,  we currently have: otnt, flexgt, tet, and oit...",
+              "createdAt": "2023-09-12T16:01:29Z",
+              "updatedAt": "2023-09-12T16:02:52Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5guCdM",
+          "commit": {
+            "abbreviatedOid": "7c31a6a"
+          },
+          "author": "aguoietf",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-09-12T16:35:17Z",
+          "updatedAt": "2023-09-12T16:35:17Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5gudiL",
+          "commit": {
+            "abbreviatedOid": "7c31a6a"
+          },
+          "author": "samans",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-09-12T17:36:49Z",
+          "updatedAt": "2023-09-12T17:36:49Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5gy2JW",
+          "commit": {
+            "abbreviatedOid": "7c31a6a"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-13T08:03:58Z",
+          "updatedAt": "2023-09-13T08:03:58Z",
+          "comments": [
+            {
+              "originalPosition": 7,
+              "body": "For Packet TE and MPLS-TE topology the prefixes are tet-pkt and tet-mpls (although Tom Petch has complained on the list that they should be pkt-tet and mpls-tet instead)\r\n\r\nFor Packet and MPLS-TE, it seems that it is need to avoid confusion between TE and non-TE topologies\r\n\r\nNot fully sure about Ethernet ...\r\n\r\nMaybe we can use etht here and leave the xxx-tet exceptions only to the YANG models developed in TEAS WG ...\r\n\r\nAny suggestion?",
+              "createdAt": "2023-09-13T08:03:58Z",
+              "updatedAt": "2023-09-13T08:05:14Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5hp6go",
+          "commit": {
+            "abbreviatedOid": "7c31a6a"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-09-21T17:29:51Z",
+          "updatedAt": "2023-09-21T17:29:51Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5iSwNg",
+          "commit": {
+            "abbreviatedOid": "7c31a6a"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T14:56:15Z",
+          "updatedAt": "2023-09-28T14:56:16Z",
+          "comments": [
+            {
+              "originalPosition": 7,
+              "body": "Prefix changed to 'etht'\r\n\r\nSee: https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/pull/6/commits/2c8cb26b2e74d0958587d6db2c832526973c2b46",
+              "createdAt": "2023-09-28T14:56:15Z",
+              "updatedAt": "2023-09-28T14:56:16Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "PR_kwDOFWCA6s5aESWM",
+      "title": "Draft updates for the -05 version",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/pull/10",
+      "state": "MERGED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Draft converted to kramdown\r\n\r\nUpdated Xufeng affiliation\r\n\r\nAdded Chaode as author\r\n\r\nUpdated abstract and introduction to clarify the scope of the draft: fix https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/1\r\n\r\nRestructured sections 2, 3 and 4\r\n\r\nClarified that TE bandwidth and label augmentations are based on the guidelines in section 6 of RFC8795: fix https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/2\r\n\r\nRemoved section 5: fix https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/issues/2\r\n\r\nAligned with latest YANG model: see PR https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/pull/6\r\n\r\nUpdated list of authors and contributors\r\n\r\nNote 1: Diff between the version converted to kramdown and the -04 uploaded to IETF: [draft-ietf-ccamp-eth-client-te-topo-yang.diff.zip](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/files/12580704/draft-ietf-ccamp-eth-client-te-topo-yang.diff.zip)\r\n\r\nNote 2: Diff between the new version and the -04 uploaded to IETF: [Side-by-side diff](https://www.ietf.org/rfcdiff?url1=draft-ietf-ccamp-eth-client-te-topo-yang&url2=https://raw.githubusercontent.com/italobusi/draft-ietf-ccamp-eth-client-te-topo-yang/kramdown/draft-ietf-ccamp-eth-client-te-topo-yang.txt)",
+      "createdAt": "2023-09-11T22:03:42Z",
+      "updatedAt": "2023-09-28T15:18:26Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang",
+      "baseRefName": "main",
+      "baseRefOid": "72c4f8dcb735a3f7c08b257bfcb4bf6876c0bb16",
+      "headRepository": "italobusi/draft-ietf-ccamp-eth-client-te-topo-yang",
+      "headRefName": "kramdown",
+      "headRefOid": "e0703159284b753b704cfb36bac7988e74bc7865",
+      "closedAt": "2023-09-28T15:18:26Z",
+      "mergedAt": "2023-09-28T15:18:26Z",
+      "mergedBy": "italobusi",
+      "mergeCommit": {
+        "oid": "820b178642d48a435d4b31cab707c39e7134d176"
+      },
+      "comments": [
+        {
+          "author": "sergiobelotti",
+          "authorAssociation": "NONE",
+          "body": "I've put some comments that does not preclude the approval. One question: this version does not contain yet the modification needed for single instance topology for multi-layer , right? ",
+          "createdAt": "2023-09-22T07:56:49Z",
+          "updatedAt": "2023-09-22T07:56:49Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOFWCA6s5guEfH",
+          "commit": {
+            "abbreviatedOid": "fa04bab"
+          },
+          "author": "aguoietf",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-12T16:37:58Z",
+          "updatedAt": "2023-09-12T16:37:58Z",
+          "comments": [
+            {
+              "originalPosition": 239,
+              "body": "same question as on the other pull request for YANG models \r\n\"eth-tet\" or \"etht\" as the model prefix?",
+              "createdAt": "2023-09-12T16:37:58Z",
+              "updatedAt": "2023-09-12T16:37:59Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5guIF4",
+          "commit": {
+            "abbreviatedOid": "fa04bab"
+          },
+          "author": "aguoietf",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-09-12T16:45:20Z",
+          "updatedAt": "2023-09-12T16:45:20Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5gy32A",
+          "commit": {
+            "abbreviatedOid": "fa04bab"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-13T08:07:33Z",
+          "updatedAt": "2023-09-13T08:07:34Z",
+          "comments": [
+            {
+              "originalPosition": 239,
+              "body": "To align with the resolution of the discussion in PR #6 ",
+              "createdAt": "2023-09-13T08:07:33Z",
+              "updatedAt": "2023-09-13T08:07:34Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5hp-Fm",
+          "commit": {
+            "abbreviatedOid": "fa04bab"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-09-21T17:39:00Z",
+          "updatedAt": "2023-09-22T07:54:00Z",
+          "comments": [
+            {
+              "originalPosition": 38,
+              "body": "adding \"itself\" --> This document describes a YANG data model for Ethernet networks when\r\n   used either as a client-layer network of an underlay transport\r\n   network (e.g., an Optical Transport Network (OTN)) or as a transport\r\n   network itself. The meaning is : it can be a client of a transport nW or it can be a transport network it self.",
+              "createdAt": "2023-09-21T17:39:00Z",
+              "updatedAt": "2023-09-22T07:54:00Z"
+            },
+            {
+              "originalPosition": 148,
+              "body": "adding \"itself\"",
+              "createdAt": "2023-09-21T17:40:23Z",
+              "updatedAt": "2023-09-22T07:54:00Z"
+            },
+            {
+              "originalPosition": 163,
+              "body": "when used as a client-layer network.....or as a transport network technology",
+              "createdAt": "2023-09-22T07:34:30Z",
+              "updatedAt": "2023-09-22T07:54:00Z"
+            },
+            {
+              "originalPosition": 239,
+              "body": "not clear to me the comment, Italo. I agree with Aihua it should be etht in alignement with others , recently the Optical Impairment with \"oit\"",
+              "createdAt": "2023-09-22T07:37:37Z",
+              "updatedAt": "2023-09-22T07:54:00Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5iS7N0",
+          "commit": {
+            "abbreviatedOid": "fa04bab"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:16:43Z",
+          "updatedAt": "2023-09-28T15:16:43Z",
+          "comments": [
+            {
+              "originalPosition": 239,
+              "body": "Aligned with the resolution in PR #6 \r\n\r\nSee: https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/pull/10/commits/e0703159284b753b704cfb36bac7988e74bc7865",
+              "createdAt": "2023-09-28T15:16:43Z",
+              "updatedAt": "2023-09-28T15:16:44Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5iS7U6",
+          "commit": {
+            "abbreviatedOid": "fa04bab"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:16:57Z",
+          "updatedAt": "2023-09-28T15:16:57Z",
+          "comments": [
+            {
+              "originalPosition": 38,
+              "body": "Done\r\n\r\nSee: https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/pull/10/commits/e0703159284b753b704cfb36bac7988e74bc7865",
+              "createdAt": "2023-09-28T15:16:57Z",
+              "updatedAt": "2023-09-28T15:16:57Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFWCA6s5iS7aS",
+          "commit": {
+            "abbreviatedOid": "fa04bab"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:17:08Z",
+          "updatedAt": "2023-09-28T15:17:08Z",
+          "comments": [
+            {
+              "originalPosition": 163,
+              "body": "Done\r\n\r\nSee: https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-eth-client-te-topo-yang/pull/10/commits/e0703159284b753b704cfb36bac7988e74bc7865",
+              "createdAt": "2023-09-28T15:17:08Z",
+              "updatedAt": "2023-09-28T15:17:08Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
