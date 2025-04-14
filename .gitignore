@@ -12,13 +12,15 @@
 /.targets.mk
 /.venv/
 /.vscode/
+/contributors
+/lib
 /lib
 /node_modules/
 /versioned/
 Gemfile.lock
 archive.json
 draft-ietf-ccamp-eth-client-te-topo-yang.xml
+draft-ietf-ccamp-eth-client-te-topo-yang.xml
 package-lock.json
 report.xml
 !requirements.txt
-/contributors
