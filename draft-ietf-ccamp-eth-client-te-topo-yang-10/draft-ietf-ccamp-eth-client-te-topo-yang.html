@@ -15,25 +15,25 @@
 <meta content="
        This document describes a YANG data model for Ethernet networks when used either as a client-layer network of an underlay transport network (e.g., an Optical Transport Network (OTN)) or as a transport network itself. 
     " name="description">
-<meta content="xml2rfc 3.28.1" name="generator">
+<meta content="xml2rfc 3.30.2" name="generator">
 <meta content="next generation" name="keyword">
 <meta content="unicorn" name="keyword">
 <meta content="sparkling distributed ledger" name="keyword">
 <meta content="draft-ietf-ccamp-eth-client-te-topo-yang-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.28.1
-    Python 3.12.9
+  xml2rfc 3.30.2
+    Python 3.12.11
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
     Jinja2 3.1.6
-    lxml 5.3.0
-    platformdirs 4.3.7
+    lxml 5.3.1
+    platformdirs 4.4.0
     pycountry 24.6.1
     PyYAML 6.0.2
-    requests 2.32.3
-    setuptools 70.3.0
-    wcwidth 0.2.13
+    requests 2.32.5
+    setuptools 80.9.0
+    wcwidth 0.2.14
 -->
 <link href="draft-ietf-ccamp-eth-client-te-topo-yang.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -1052,11 +1052,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">ETH Topology Transport YANG Model</td>
-<td class="right">April 2025</td>
+<td class="right">October 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Yu, et al.</td>
-<td class="center">Expires 16 October 2025</td>
+<td class="center">Expires 18 April 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1064,17 +1064,17 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <div id="internal-metadata" class="document-information">
 <dl id="identifiers">
 <dt class="label-workgroup">Workgroup:</dt>
-<dd class="workgroup">Common Control and Measurement Plane</dd>
+<dd class="workgroup">CCAMP Working Group</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
 <dd class="internet-draft">draft-ietf-ccamp-eth-client-te-topo-yang-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-04-14" class="published">14 April 2025</time>
+<time datetime="2025-10-15" class="published">15 October 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-10-16">16 October 2025</time></dd>
+<dd class="expires"><time datetime="2026-04-18">18 April 2026</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1148,7 +1148,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 16 October 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 18 April 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -4582,7 +4582,7 @@ module ietf-eth-te-topology {
 <dl class="references">
 <dt id="I-D.ietf-ccamp-client-signal-yang">[I-D.ietf-ccamp-client-signal-yang]</dt>
         <dd>
-<span class="refAuthor">Zheng, H.</span>, <span class="refAuthor">Guo, A.</span>, <span class="refAuthor">Busi, I.</span>, <span class="refAuthor">Snitser, A.</span>, and <span class="refAuthor">C. Yu</span>, <span class="refTitle">"A YANG Data Model for Transport Network Client Signals"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-ccamp-client-signal-yang-14</span>, <time datetime="2025-02-04" class="refDate">4 February 2025</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-14">https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-14</a>&gt;</span>. </dd>
+<span class="refAuthor">Zheng, H.</span>, <span class="refAuthor">Guo, A.</span>, <span class="refAuthor">Busi, I.</span>, <span class="refAuthor">Snitser, A.</span>, and <span class="refAuthor">C. Yu</span>, <span class="refTitle">"A YANG Data Model for Transport Network Client Signals"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-ccamp-client-signal-yang-16</span>, <time datetime="2025-07-28" class="refDate">28 July 2025</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-16">https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-16</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="ITU_G.8021">[ITU_G.8021]</dt>
         <dd>
@@ -4685,10 +4685,11 @@ module ietf-eth-te-topology {
 </div>
 </address>
 <address class="vcard">
-        <div dir="auto" class="left"><span class="fn nameRole">To-Be-Added</span></div>
+        <div dir="auto" class="left"><span class="fn nameRole">Yanlei Zheng</span></div>
+<div dir="auto" class="left"><span class="org">China Unicom</span></div>
 <div class="email">
 <span>Email:</span>
-<a href="mailto:To-Be-Added" class="email">To-Be-Added</a>
+<a href="mailto:zhengyanlei@chinaunicom.cn" class="email">zhengyanlei@chinaunicom.cn</a>
 </div>
 </address>
 </section>
